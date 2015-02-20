@@ -146,6 +146,7 @@ static const int drc_mode_map_size = sizeof(drc_mode_map)/sizeof(drc_mode_map[0]
 #define CommandDRCLevel    18
 #define CommandStatsPass   19
 #define CommandAnnotate    20
+#define CommandWaitUntil   21
 
 static COMMAND_LIST  cmdline_commands[] =
 {
@@ -170,6 +171,7 @@ static COMMAND_LIST  cmdline_commands[] =
    {CommandDRCLevel,    "-drc",       "drc", "Set DRC Level", 1},
    {CommandStatsPass,   "-stats",     "st", "Force recomputation of statistics on stills capture pass"},
    {CommandAnnotate,    "-annotate",  "a",  "Enable/Set annotate flags or text", 1},
+   {CommandWaitUntil,   "-waituntil", "w",  "Wait until a specified time to take picture.", 1},
 };
 
 static int cmdline_commands_size = sizeof(cmdline_commands) / sizeof(cmdline_commands[0]);
